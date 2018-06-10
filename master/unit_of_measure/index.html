@@ -1,0 +1,616 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>Unit Of Measure - Odoo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.8d40d89b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#unit-of-measure" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Odoo" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Odoo
+              </span>
+              <span class="md-header-nav__topic">
+                Unit Of Measure
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Odoo
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Master
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Master
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../product/" title="Product" class="md-nav__link">
+      Product
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Unit Of Measure
+      </label>
+    
+    <a href="./" title="Unit Of Measure" class="md-nav__link md-nav__link--active">
+      Unit Of Measure
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menu" title="Menu" class="md-nav__link">
+    Menu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#satuan-unit" title="Satuan Unit" class="md-nav__link">
+    Satuan Unit
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh" title="Contoh" class="md-nav__link">
+    Contoh
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-ukuran-kategori" title="Unit Ukuran Kategori" class="md-nav__link">
+    Unit Ukuran Kategori
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Inventory
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Inventory
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../inventory/persediaan/" title="Persediaan" class="md-nav__link">
+      Persediaan
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menu" title="Menu" class="md-nav__link">
+    Menu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#satuan-unit" title="Satuan Unit" class="md-nav__link">
+    Satuan Unit
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contoh" title="Contoh" class="md-nav__link">
+    Contoh
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-ukuran-kategori" title="Unit Ukuran Kategori" class="md-nav__link">
+    Unit Ukuran Kategori
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="unit-of-measure">Unit of Measure</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Unit of Measure atau UOM atau Satuan Unit sangat penting di dalam bidang kita, karena dia akan muncul di mana-mana.
+Contohnya: Di penjualan, Pembelian, Inventory, Stock, dll.</p>
+<p>Apa yang buat di penting lagi?</p>
+<p>Coba baca kasus di bawah ini:</p>
+<p>PT. ABC membeli Salmon dari PT. GHZ dengan kuantitas besar yaitu hitungan nya
+per <code>Ton</code>. Tetapi PT. ABC dalam bidang distribusi dan menjual Salmon dalam
+quantity kecil ke consumer bisa sampai ke <code>Gram</code>. Tetapi, waktu stock opnum, PT.
+ABC memakai <code>Kg</code> sebagai satuan pembukuan.</p>
+<p>Jadi, PT. ABC perlu minimun 3 Satuan unit (Ton, Kg, Gram) untuk membantu proses bisnis mereka.</p>
+<ol>
+<li>Membuat pembelian, Memakai <code>Ton</code></li>
+<li>Membuat penjualan, memakai <code>Kg</code> atau <code>Gram</code></li>
+<li>Pembukuan inventory memakai <code>Kg</code></li>
+</ol>
+<p>Biarpun bermacam-macam Satuan unit, di bantu oleh <a href="#unit-ukuran-kategori">Unit Ukuran Kategori</a>, kita bisa meng-group satuan-satuan unit. Dan biar bagaimanapun, waktu kita membaca pembukuan inventory atau akuntin, cuma satu <a href="#satuan-unit">Satuan Unit</a> yang akan di keluarkan. System akan automasi
+perhitungan segalanya, sesuai setting-an yang ada.</p>
+<h2 id="menu">Menu</h2>
+<blockquote>
+<p>Persediaan &gt; Konfigurasi &gt; Satuan Unit</p>
+</blockquote>
+<p><img alt="Satuan Unit Menu" src="../img/uom_menu.png" /></p>
+<h2 id="satuan-unit">Satuan Unit</h2>
+<p><img alt="Satuan Unit" src="../img/uom_main.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Satuan Ukuran</td>
+<td>Yes</td>
+<td>Nama untuk satuan ukuran ini</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Kategori</td>
+<td>Yes</td>
+<td>Ini untuk meng-group satuan unit<br>Detail bisa liat di <a href="#unit-ukuran-kategori">SINI</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>Aktif</td>
+<td>Yes</td>
+<td>Menentukan apakah satuan unit ini masih aktif</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Ketepatan Pembulanan</td>
+<td>Yes</td>
+<td>Menentukan cara pembulatan.<br><strong>Contoh:</strong><br> Ketepatan Pembulatan: 0,001<br> Quantitas aktual: 8.97294<br> Quantitas setelah di bulatkan adalah: 8.973</td>
+<td>0,001</td>
+</tr>
+<tr>
+<td>Tipe</td>
+<td>Yes</td>
+<td><code>Satuan Dasar untuk kategori ini</code><br>Sebagai dasar dari Satuan Unit yang kategori sama.<br>Nilainya akan selalu <strong>1</strong></td>
+<td>Satuan Dasar Untuk Kategori Ini</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>Lebih Besar Satuan Referensi</code><br> Nilai nya lebih besar dari pada Satuan dasar</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>Lebih Kecil Satuan Referensi</code><br> Nilai nya lebih Kecil dari pada Satuan dasar</td>
+<td></td>
+</tr>
+<tr>
+<td>Ratio</td>
+<td>Yes</td>
+<td>Field ini akan muncul bila <strong>Tipe</strong> adalah <code>Lebih Besar Satuan Referensi</code> atau <code>Lebih Kecil Satuan Referensi</code></td>
+<td>1,000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="contoh">Contoh</h3>
+<p>Case 1: Berat</p>
+<p>1 Ton = 1,000 Kg
+1 Kg = 1,000 gram
+dengan data atas contoh sebagai berikut:</p>
+<ol>
+<li>Kita buatkan <a href="#unit-ukuran-kategori">Unit Ukuran Kategori</a> untuk meng-group satuan unit yang akan di buat.<br>Kita namakan dia <strong>Berat</strong>.</li>
+<li>Buatkan <a href="#satuan-unit">Satuan Unit</a> dengan data yang di bawah:<br> Satuan Ukuran: Kg<br>Kategori: Berat<br>Tipe: Satuan Dasar untuk Kategori ini</li>
+<li>Buatkan <a href="#satuan-unit">Satuan Unit</a> dengan data yang di bawah:<br> Satuan Ukuran: Ton<br>Kategori: Berat<br>Tipe: Lebih Besar Satuan Refensi<br>Ratio: 1000</li>
+<li>Buatkan <a href="#satuan-unit">Satuan Unit</a> dengan data yang di bawah:<br> Satuan Ukuran: Gram<br>Kategori: Berat<br>Tipe: Lebih Kecil Satuan Refensi<br>Ratio: 1000</li>
+</ol>
+<p>Case 2: </p>
+<p>a) Produk <strong>US Choice Short Rib</strong> kita beli dengan satuan unit <strong>Loaf</strong>. 1 Loaf nya adalah 3 Kg. <br>
+b) Produk <strong>Beef Short Plate</strong> kita beli dengan satuan unit <strong>Loaf</strong>. 1 Loaf nya adalah 4 Kg. </p>
+<p>Dengan kasus di atas kita bisa buatkan begitu:</p>
+<ol>
+<li>Untuk (a), Buatkan <a href="#satuan-unit">Satuan Unit</a> dengan data yang di bawah:<br> Satuan Ukuran: Loaf(3kg)<br>Kategori: Berat<br>Tipe: Lebih Besar Satuan Refensi<br>Ratio: 3</li>
+<li>Untuk (b), Buatkan <a href="#satuan-unit">Satuan Unit</a> dengan data yang di bawah:<br> Satuan Ukuran: Loaf(4kg)<br>Kategori: Berat<br>Tipe: Lebih Besar Satuan Refensi<br>Ratio: 4</li>
+</ol>
+<h2 id="unit-ukuran-kategori">Unit Ukuran Kategori</h2>
+<p><img alt="Unit Ukuran Kategori" src="../img/unit_ukuran_kategori.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nama</td>
+<td>Yes</td>
+<td>Nama untuk kategori ini</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../product/" title="Product" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Product
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../inventory/persediaan/" title="Persediaan" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Persediaan
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
