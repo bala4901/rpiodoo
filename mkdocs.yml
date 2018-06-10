@@ -1,0 +1,11 @@
+site_name: Odoo
+theme:
+    name: material
+pages:
+    - Home: 'index.md'
+    - Master: 
+        - 'Product': 'master/product.md'
+        - 'Unit Of Measure': 'master/unit_of_measure.md'
+    - Inventory:
+        - 'Persediaan': 'inventory/persediaan.md'
+        
