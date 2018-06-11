@@ -32,17 +32,19 @@ melakukan penambahan product.
 
 ## Persediaan
 
-Kegunaan `Persediaan` adalah menentukan cara penyediaan product ini
+Kegunaan `Persediaan` adalah menentukan cara penyediaan product ini.<br>
+Untuk teori tentang penyediaan inventory bisa ke topic [Inventory/Persediaan](../inventory/persediaan.md)
 
 ![Item Persediaan](img/item_persediaan.png)
 
 |Field|Required|Description|Default|
 |-----|--------|-----------|-------|
-|Rute|No|`Pabrik`<br>|Beli|
-|||`Beli`<br>||
-|||`Membuat Pesanan`<br>||
+|Rute|No|`Pabrik`<br>Penyediaan lewat Produksi|Beli|
+|||`Beli`<br>Penyediaan lewat beli sama vendor||
+|||`Membuat Pesanan`<br>Penyediaan bila dapat orderan dari sales order||
 |Berat|No|Berat Produk ini|0.00|
 |Volume|No|Volume Produk ini|0.00|
+
 
 
 ### Vendor
@@ -54,6 +56,8 @@ Tabel ini akan dipakai oleh system menentukan vendor pada kasus di bawah ini:<br
 1. Rute di pilih "Beli" dan "Membuat Pesanan" bersamaan".<br>
 Waktu mendapat "Sale", system akan auto generasi "Draft Purchase Order".<br>
 2. Ada menentukan [Minimun Stock Rule](#minimun-stock-rule)
+
+
 
 ![Product Vendor](img/product_vendor.png)
 

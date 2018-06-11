@@ -1,0 +1,154 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Odoo\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#odoo", 
+            "text": "For full documentation visit  mkdocs.org .", 
+            "title": "Odoo"
+        }, 
+        {
+            "location": "/#commands", 
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "Commands"
+        }, 
+        {
+            "location": "/#project-layout", 
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Project layout"
+        }, 
+        {
+            "location": "/master/product/", 
+            "text": "Product\n\n\nProduct adalah basic dari segala proses yang ada di dalam 1 perusahaan.\nUntuk menentukan proses akan bisa jalan dengan lancar jadi kita harus hati-hati\nmelakukan penambahan product.\n\n\n\n\nBasic Setting\n\n\n\n\n\n\n\n\nField\n\n\nRequired\n\n\nDescription\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nNama Product\n\n\nYes\n\n\n\n\n\n\n\n\n\n\nDapat di jual\n\n\n-\n\n\nProduk ini di pakai untuk dijual?\n\n\nYes\n\n\n\n\n\n\nDapat di beli\n\n\n-\n\n\nProduk ini di pakai untuk dibeli?\n\n\nYes\n\n\n\n\n\n\n\n\nInformasi Umum\n\n\n\n\n\n\n\n\nField\n\n\nRequired\n\n\nDescription\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nTipe Product\n\n\nYes\n\n\nProduct Stockable\n \nProduct yang akan di opnum\n\n\nProduct Stockable\n\n\n\n\n\n\n\n\n\n\nDapat di konsumsi\n \nProduk yang di konsumsi tidak untuk opnum\n\n\n\n\n\n\n\n\n\n\n\n\nService\n Produk yang bersifat servis\n\n\n\n\n\n\n\n\nReferensi Internal\n\n\nNo\n\n\nKode Barang\n\n\n\n\n\n\n\n\nKategori Internal\n\n\nYes\n\n\nKategori barang\n\n\n\n\n\n\n\n\nHarga Jual\n\n\nNo\n\n\nHarga yang di pakai untuk membuat sale\n\n\n0.00\n\n\n\n\n\n\nBiaya\n\n\nNo\n\n\nBiaya untuk produk ini\n\n\n0.00\n\n\n\n\n\n\nSatuan Ukuran\n\n\nYes\n\n\nSatuan dasar yang di pakai\noleh Gudang untuk melakukan \nstock opnum.\n\n\nUnit\n\n\n\n\n\n\nUnit ukur Pembelian\n\n\nYes\n\n\nSatuan yang di pakai\nuntuk membeli produk ini dari \nsupplier. \nSaos Tomat memakai \"Satuan Ukuran Botol\"\n \ntetapi membelinya dengan satuan ukuan \"Lusin\"\n\n\nUnit\n\n\n\n\n\n\nPengaturan Tagihan Pembelian\n\n\nYes\n\n\nJumlah Yang di Pesan\nWaktu membuat pembayaran ke supplier mengunakan quantity PO\n\n\nPada Jumlah yang di terima\n\n\n\n\n\n\n\n\n\n\nPada jumlah yang di terima\nWaktu membuat pembayaran ke supplier mengunakan quantity actual receiving\n\n\n\n\n\n\n\n\n\n\nPersediaan\n\n\nKegunaan \nPersediaan\n adalah menentukan cara penyediaan product ini\n\n\n\n\n\n\n\n\n\n\nField\n\n\nRequired\n\n\nDescription\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nRute\n\n\nNo\n\n\nPabrik\n\n\nBeli\n\n\n\n\n\n\n\n\n\n\nBeli\n\n\n\n\n\n\n\n\n\n\n\n\nMembuat Pesanan\n\n\n\n\n\n\n\n\nBerat\n\n\nNo\n\n\nBerat Produk ini\n\n\n0.00\n\n\n\n\n\n\nVolume\n\n\nNo\n\n\nVolume Produk ini\n\n\n0.00\n\n\n\n\n\n\n\n\nVendor\n\n\nTabel ini diisikan untuk menginformasikan vendor yang dapat supply product ini:\n\n\n\n\nNote:\n\nTabel ini akan dipakai oleh system menentukan vendor pada kasus di bawah ini:\n\n1. Rute di pilih \"Beli\" dan \"Membuat Pesanan\" bersamaan\".\n\nWaktu mendapat \"Sale\", system akan auto generasi \"Draft Purchase Order\".\n\n2. Ada menentukan \nMinimun Stock Rule\n\n\n\n\n\n\n\n\n\n\n\n\nField\n\n\nRequired\n\n\nDescription\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nPemasok\n\n\nYes\n\n\nVendor yang menyuplai product ini\n\n\n\n\n\n\n\n\nNama Produk Pemasok\n\n\nNo\n\n\nDi isi bila nama produk vendor tidak sama dengan nama internal kita\n\n\n\n\n\n\n\n\nKode Produk Pemasuk\n\n\nNo\n\n\nDi isi bila \nReferensi Internal\n beda sama kode produk vendor\n\n\n\n\n\n\n\n\nLama Waktu Pengiriman\n\n\nYes\n\n\nBerapa hari yang di perlukan vendor untuk mengirimkan barang sampai di tempat kita\n\n\n1\n\n\n\n\n\n\nKuantitas Minimal\n\n\nYes\n\n\nIni di gunakan waktu kita ada setting \nMinimun Stock Rule\n.\nSystem akan membuat Draft Purchase Order sewaktu \"On-Hand Qty\" di bawah kuantitas ini\n\n\n0\n\n\n\n\n\n\nKuantitas Minimal\n\n\nYes\n\n\nKuantitas minimal yang kita perlu Purchase Order ke vendor\n\n\n0\n\n\n\n\n\n\nHarga\n\n\nYes\n\n\nHarga yang di jual oleh vendor ini.\nBila isi 0, user bisa sesuaikan harga di purchase order\n\n\n0\n\n\n\n\n\n\nMasa Berlaku\n\n\nYes\n\n\nSettingan Kadaluarsa untuk harga dari vendor ini\n\n\n0\n\n\n\n\n\n\n\n\nPenjualan\n\n\n\n\n\n\n\n\n\n\nField\n\n\nRequired\n\n\nDescription\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nPelangganan Lead Time\n\n\nNo\n\n\nBerapa hari yang di perlukan untuk delivery produk sampai ke tujuan customer.Ini untuk menentukan tanggal pengiriman.\nFormula:\n tanggal pengiriman= Tanggal Konfirmasi Sales Order + Pelanggan Lead Time\nContoh:\n \nTanggal Konfimasi: 10 June 2018\nPelangganan Lead Time: 12.\nJadi, Tanggal Pengiriman adalah: 22 June 2018.\n\n\n0 \nNote: 0 artinya pengiriman pada hari ini\n\n\n\n\n\n\nManufaktur Lead Time\n\n\nNo\n\n\nBerapa hari yang di perlukan untuk delivery produk sampai ke tujuan customer.Ini untuk menentukan tanggal pengiriman.\nFormula:\n tanggal pengiriman= Tanggal Konfirmasi Sales Order + Pelanggan Lead Time\nContoh:\n \nTanggal Konfimasi: 10 June 2018\nPelangganan Lead Time: 12.\nJadi, Tanggal Pengiriman adalah: 22 June 2018.\n\n\n0 \nNote: 0 artinya pengiriman pada hari ini\n\n\n\n\n\n\n\n\nInvoicing\n\n\nUntuk tab ini biasa tanggung jawah orang \nAkun\n yang membuat setting\n\n\n\n\n\n\n\n\n\n\nField\n\n\nRequired\n\n\nDescription\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nPelanggan\n\n\nNo\n\n\nPajak yang di pakai untuk pembelian\n\n\n\n\n\n\n\n\nPenjual Pajak\n\n\nNo\n\n\nPajak yang di pakai untuk penjualan\n\n\n\n\n\n\n\n\nAkun Perbedaan Harga\n\n\nNo\n\n\nAkun yang dipakai bila terjadi perselisihan harga waktu jual/beli\n\n\n\n\n\n\n\n\nKebijakan Penagihan\n\n\nNo\n\n\nJumlah di Pesan : Menagih sesuai kuantitas yang di \norder\n customer\n\n\nJumlah di pesan\n\n\n\n\n\n\n\n\n\n\nJumlah Terkirim : Menagih sesuai kuantitas yang \nTerkirim\n ke customer\n\n\n\n\n\n\n\n\n\n\nCatatan\n\n\n\n\n\n\n\n\n\n\nField\n\n\nRequired\n\n\nDescription\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nDeskripsi untuk Kutipan\n\n\nNo\n\n\nNama/Deskripsi yang di pakai waktu di terakan di Sales Order\n\n\n\n\n\n\n\n\nDeskripsi untuk Penjual\n\n\nNo\n\n\nNama/Deskripsi yang di pakai waktu di terakan di Purchase Order\n\n\n\n\n\n\n\n\nDeskripsi untuk hasil\n\n\nNo\n\n\nNama/Deskripsi yang di pakai waktu di terakan di Picking List(Inventory)", 
+            "title": "Product"
+        }, 
+        {
+            "location": "/master/product/#product", 
+            "text": "Product adalah basic dari segala proses yang ada di dalam 1 perusahaan.\nUntuk menentukan proses akan bisa jalan dengan lancar jadi kita harus hati-hati\nmelakukan penambahan product.", 
+            "title": "Product"
+        }, 
+        {
+            "location": "/master/product/#basic-setting", 
+            "text": "Field  Required  Description  Default      Nama Product  Yes      Dapat di jual  -  Produk ini di pakai untuk dijual?  Yes    Dapat di beli  -  Produk ini di pakai untuk dibeli?  Yes", 
+            "title": "Basic Setting"
+        }, 
+        {
+            "location": "/master/product/#informasi-umum", 
+            "text": "Field  Required  Description  Default      Tipe Product  Yes  Product Stockable   Product yang akan di opnum  Product Stockable      Dapat di konsumsi   Produk yang di konsumsi tidak untuk opnum       Service  Produk yang bersifat servis     Referensi Internal  No  Kode Barang     Kategori Internal  Yes  Kategori barang     Harga Jual  No  Harga yang di pakai untuk membuat sale  0.00    Biaya  No  Biaya untuk produk ini  0.00    Satuan Ukuran  Yes  Satuan dasar yang di pakai oleh Gudang untuk melakukan  stock opnum.  Unit    Unit ukur Pembelian  Yes  Satuan yang di pakai untuk membeli produk ini dari  supplier.  Saos Tomat memakai \"Satuan Ukuran Botol\"   tetapi membelinya dengan satuan ukuan \"Lusin\"  Unit    Pengaturan Tagihan Pembelian  Yes  Jumlah Yang di Pesan Waktu membuat pembayaran ke supplier mengunakan quantity PO  Pada Jumlah yang di terima      Pada jumlah yang di terima Waktu membuat pembayaran ke supplier mengunakan quantity actual receiving", 
+            "title": "Informasi Umum"
+        }, 
+        {
+            "location": "/master/product/#persediaan", 
+            "text": "Kegunaan  Persediaan  adalah menentukan cara penyediaan product ini      Field  Required  Description  Default      Rute  No  Pabrik  Beli      Beli       Membuat Pesanan     Berat  No  Berat Produk ini  0.00    Volume  No  Volume Produk ini  0.00", 
+            "title": "Persediaan"
+        }, 
+        {
+            "location": "/master/product/#vendor", 
+            "text": "Tabel ini diisikan untuk menginformasikan vendor yang dapat supply product ini:   Note: \nTabel ini akan dipakai oleh system menentukan vendor pada kasus di bawah ini: \n1. Rute di pilih \"Beli\" dan \"Membuat Pesanan\" bersamaan\". \nWaktu mendapat \"Sale\", system akan auto generasi \"Draft Purchase Order\". \n2. Ada menentukan  Minimun Stock Rule       Field  Required  Description  Default      Pemasok  Yes  Vendor yang menyuplai product ini     Nama Produk Pemasok  No  Di isi bila nama produk vendor tidak sama dengan nama internal kita     Kode Produk Pemasuk  No  Di isi bila  Referensi Internal  beda sama kode produk vendor     Lama Waktu Pengiriman  Yes  Berapa hari yang di perlukan vendor untuk mengirimkan barang sampai di tempat kita  1    Kuantitas Minimal  Yes  Ini di gunakan waktu kita ada setting  Minimun Stock Rule . System akan membuat Draft Purchase Order sewaktu \"On-Hand Qty\" di bawah kuantitas ini  0    Kuantitas Minimal  Yes  Kuantitas minimal yang kita perlu Purchase Order ke vendor  0    Harga  Yes  Harga yang di jual oleh vendor ini. Bila isi 0, user bisa sesuaikan harga di purchase order  0    Masa Berlaku  Yes  Settingan Kadaluarsa untuk harga dari vendor ini  0", 
+            "title": "Vendor"
+        }, 
+        {
+            "location": "/master/product/#penjualan", 
+            "text": "Field  Required  Description  Default      Pelangganan Lead Time  No  Berapa hari yang di perlukan untuk delivery produk sampai ke tujuan customer.Ini untuk menentukan tanggal pengiriman. Formula:  tanggal pengiriman= Tanggal Konfirmasi Sales Order + Pelanggan Lead Time Contoh:   Tanggal Konfimasi: 10 June 2018 Pelangganan Lead Time: 12. Jadi, Tanggal Pengiriman adalah: 22 June 2018.  0  Note: 0 artinya pengiriman pada hari ini    Manufaktur Lead Time  No  Berapa hari yang di perlukan untuk delivery produk sampai ke tujuan customer.Ini untuk menentukan tanggal pengiriman. Formula:  tanggal pengiriman= Tanggal Konfirmasi Sales Order + Pelanggan Lead Time Contoh:   Tanggal Konfimasi: 10 June 2018 Pelangganan Lead Time: 12. Jadi, Tanggal Pengiriman adalah: 22 June 2018.  0  Note: 0 artinya pengiriman pada hari ini", 
+            "title": "Penjualan"
+        }, 
+        {
+            "location": "/master/product/#invoicing", 
+            "text": "Untuk tab ini biasa tanggung jawah orang  Akun  yang membuat setting      Field  Required  Description  Default      Pelanggan  No  Pajak yang di pakai untuk pembelian     Penjual Pajak  No  Pajak yang di pakai untuk penjualan     Akun Perbedaan Harga  No  Akun yang dipakai bila terjadi perselisihan harga waktu jual/beli     Kebijakan Penagihan  No  Jumlah di Pesan : Menagih sesuai kuantitas yang di  order  customer  Jumlah di pesan      Jumlah Terkirim : Menagih sesuai kuantitas yang  Terkirim  ke customer", 
+            "title": "Invoicing"
+        }, 
+        {
+            "location": "/master/product/#catatan", 
+            "text": "Field  Required  Description  Default      Deskripsi untuk Kutipan  No  Nama/Deskripsi yang di pakai waktu di terakan di Sales Order     Deskripsi untuk Penjual  No  Nama/Deskripsi yang di pakai waktu di terakan di Purchase Order     Deskripsi untuk hasil  No  Nama/Deskripsi yang di pakai waktu di terakan di Picking List(Inventory)", 
+            "title": "Catatan"
+        }, 
+        {
+            "location": "/master/unit_of_measure/", 
+            "text": "Unit of Measure\n\n\nIntroduction\n\n\nUnit of Measure atau UOM atau Satuan Unit sangat penting di dalam bidang kita, karena dia akan muncul di mana-mana.\nContohnya: Di penjualan, Pembelian, Inventory, Stock, dll.\n\n\nApa yang buat di penting lagi?\n\n\nCoba baca kasus di bawah ini:\n\n\nPT. ABC membeli Salmon dari PT. GHZ dengan kuantitas besar yaitu hitungan nya\nper \nTon\n. Tetapi PT. ABC dalam bidang distribusi dan menjual Salmon dalam\nquantity kecil ke consumer bisa sampai ke \nGram\n. Tetapi, waktu stock opnum, PT.\nABC memakai \nKg\n sebagai satuan pembukuan.\n\n\nJadi, PT. ABC perlu minimun 3 Satuan unit (Ton, Kg, Gram) untuk membantu proses bisnis mereka.\n\n\n\n\nMembuat pembelian, Memakai \nTon\n\n\nMembuat penjualan, memakai \nKg\n atau \nGram\n\n\nPembukuan inventory memakai \nKg\n\n\n\n\nBiarpun bermacam-macam Satuan unit, di bantu oleh \nUnit Ukuran Kategori\n, kita bisa meng-group satuan-satuan unit. Dan biar bagaimanapun, waktu kita membaca pembukuan inventory atau akuntin, cuma satu \nSatuan Unit\n yang akan di keluarkan. System akan automasi\nperhitungan segalanya, sesuai setting-an yang ada.\n\n\nMenu\n\n\n\n\nPersediaan \n Konfigurasi \n Satuan Unit\n\n\n\n\n\n\nSatuan Unit\n\n\n\n\n\n\n\n\n\n\nField\n\n\nRequired\n\n\nDescription\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nSatuan Ukuran\n\n\nYes\n\n\nNama untuk satuan ukuran ini\n\n\n-\n\n\n\n\n\n\nKategori\n\n\nYes\n\n\nIni untuk meng-group satuan unit\nDetail bisa liat di \nSINI\n\n\n-\n\n\n\n\n\n\nAktif\n\n\nYes\n\n\nMenentukan apakah satuan unit ini masih aktif\n\n\nYes\n\n\n\n\n\n\nKetepatan Pembulanan\n\n\nYes\n\n\nMenentukan cara pembulatan.\nContoh:\n Ketepatan Pembulatan: 0,001\n Quantitas aktual: 8.97294\n Quantitas setelah di bulatkan adalah: 8.973\n\n\n0,001\n\n\n\n\n\n\nTipe\n\n\nYes\n\n\nSatuan Dasar untuk kategori ini\nSebagai dasar dari Satuan Unit yang kategori sama.\nNilainya akan selalu \n1\n\n\nSatuan Dasar Untuk Kategori Ini\n\n\n\n\n\n\n\n\n\n\nLebih Besar Satuan Referensi\n Nilai nya lebih besar dari pada Satuan dasar\n\n\n\n\n\n\n\n\n\n\n\n\nLebih Kecil Satuan Referensi\n Nilai nya lebih Kecil dari pada Satuan dasar\n\n\n\n\n\n\n\n\nRatio\n\n\nYes\n\n\nField ini akan muncul bila \nTipe\n adalah \nLebih Besar Satuan Referensi\n atau \nLebih Kecil Satuan Referensi\n\n\n1,000\n\n\n\n\n\n\n\n\nContoh\n\n\nCase 1: Berat\n\n\n1 Ton = 1,000 Kg\n1 Kg = 1,000 gram\ndengan data atas contoh sebagai berikut:\n\n\n\n\nKita buatkan \nUnit Ukuran Kategori\n untuk meng-group satuan unit yang akan di buat.\nKita namakan dia \nBerat\n.\n\n\nBuatkan \nSatuan Unit\n dengan data yang di bawah:\n Satuan Ukuran: Kg\nKategori: Berat\nTipe: Satuan Dasar untuk Kategori ini\n\n\nBuatkan \nSatuan Unit\n dengan data yang di bawah:\n Satuan Ukuran: Ton\nKategori: Berat\nTipe: Lebih Besar Satuan Refensi\nRatio: 1000\n\n\nBuatkan \nSatuan Unit\n dengan data yang di bawah:\n Satuan Ukuran: Gram\nKategori: Berat\nTipe: Lebih Kecil Satuan Refensi\nRatio: 1000\n\n\n\n\nCase 2: \n\n\na) Produk \nUS Choice Short Rib\n kita beli dengan satuan unit \nLoaf\n. 1 Loaf nya adalah 3 Kg. \n\nb) Produk \nBeef Short Plate\n kita beli dengan satuan unit \nLoaf\n. 1 Loaf nya adalah 4 Kg. \n\n\nDengan kasus di atas kita bisa buatkan begitu:\n\n\n\n\nUntuk (a), Buatkan \nSatuan Unit\n dengan data yang di bawah:\n Satuan Ukuran: Loaf(3kg)\nKategori: Berat\nTipe: Lebih Besar Satuan Refensi\nRatio: 3\n\n\nUntuk (b), Buatkan \nSatuan Unit\n dengan data yang di bawah:\n Satuan Ukuran: Loaf(4kg)\nKategori: Berat\nTipe: Lebih Besar Satuan Refensi\nRatio: 4\n\n\n\n\nUnit Ukuran Kategori\n\n\n\n\n\n\n\n\n\n\nField\n\n\nRequired\n\n\nDescription\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nNama\n\n\nYes\n\n\nNama untuk kategori ini\n\n\n-", 
+            "title": "Unit Of Measure"
+        }, 
+        {
+            "location": "/master/unit_of_measure/#unit-of-measure", 
+            "text": "", 
+            "title": "Unit of Measure"
+        }, 
+        {
+            "location": "/master/unit_of_measure/#introduction", 
+            "text": "Unit of Measure atau UOM atau Satuan Unit sangat penting di dalam bidang kita, karena dia akan muncul di mana-mana.\nContohnya: Di penjualan, Pembelian, Inventory, Stock, dll.  Apa yang buat di penting lagi?  Coba baca kasus di bawah ini:  PT. ABC membeli Salmon dari PT. GHZ dengan kuantitas besar yaitu hitungan nya\nper  Ton . Tetapi PT. ABC dalam bidang distribusi dan menjual Salmon dalam\nquantity kecil ke consumer bisa sampai ke  Gram . Tetapi, waktu stock opnum, PT.\nABC memakai  Kg  sebagai satuan pembukuan.  Jadi, PT. ABC perlu minimun 3 Satuan unit (Ton, Kg, Gram) untuk membantu proses bisnis mereka.   Membuat pembelian, Memakai  Ton  Membuat penjualan, memakai  Kg  atau  Gram  Pembukuan inventory memakai  Kg   Biarpun bermacam-macam Satuan unit, di bantu oleh  Unit Ukuran Kategori , kita bisa meng-group satuan-satuan unit. Dan biar bagaimanapun, waktu kita membaca pembukuan inventory atau akuntin, cuma satu  Satuan Unit  yang akan di keluarkan. System akan automasi\nperhitungan segalanya, sesuai setting-an yang ada.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/master/unit_of_measure/#menu", 
+            "text": "Persediaan   Konfigurasi   Satuan Unit", 
+            "title": "Menu"
+        }, 
+        {
+            "location": "/master/unit_of_measure/#satuan-unit", 
+            "text": "Field  Required  Description  Default      Satuan Ukuran  Yes  Nama untuk satuan ukuran ini  -    Kategori  Yes  Ini untuk meng-group satuan unit Detail bisa liat di  SINI  -    Aktif  Yes  Menentukan apakah satuan unit ini masih aktif  Yes    Ketepatan Pembulanan  Yes  Menentukan cara pembulatan. Contoh:  Ketepatan Pembulatan: 0,001  Quantitas aktual: 8.97294  Quantitas setelah di bulatkan adalah: 8.973  0,001    Tipe  Yes  Satuan Dasar untuk kategori ini Sebagai dasar dari Satuan Unit yang kategori sama. Nilainya akan selalu  1  Satuan Dasar Untuk Kategori Ini      Lebih Besar Satuan Referensi  Nilai nya lebih besar dari pada Satuan dasar       Lebih Kecil Satuan Referensi  Nilai nya lebih Kecil dari pada Satuan dasar     Ratio  Yes  Field ini akan muncul bila  Tipe  adalah  Lebih Besar Satuan Referensi  atau  Lebih Kecil Satuan Referensi  1,000", 
+            "title": "Satuan Unit"
+        }, 
+        {
+            "location": "/master/unit_of_measure/#contoh", 
+            "text": "Case 1: Berat  1 Ton = 1,000 Kg\n1 Kg = 1,000 gram\ndengan data atas contoh sebagai berikut:   Kita buatkan  Unit Ukuran Kategori  untuk meng-group satuan unit yang akan di buat. Kita namakan dia  Berat .  Buatkan  Satuan Unit  dengan data yang di bawah:  Satuan Ukuran: Kg Kategori: Berat Tipe: Satuan Dasar untuk Kategori ini  Buatkan  Satuan Unit  dengan data yang di bawah:  Satuan Ukuran: Ton Kategori: Berat Tipe: Lebih Besar Satuan Refensi Ratio: 1000  Buatkan  Satuan Unit  dengan data yang di bawah:  Satuan Ukuran: Gram Kategori: Berat Tipe: Lebih Kecil Satuan Refensi Ratio: 1000   Case 2:   a) Produk  US Choice Short Rib  kita beli dengan satuan unit  Loaf . 1 Loaf nya adalah 3 Kg.  \nb) Produk  Beef Short Plate  kita beli dengan satuan unit  Loaf . 1 Loaf nya adalah 4 Kg.   Dengan kasus di atas kita bisa buatkan begitu:   Untuk (a), Buatkan  Satuan Unit  dengan data yang di bawah:  Satuan Ukuran: Loaf(3kg) Kategori: Berat Tipe: Lebih Besar Satuan Refensi Ratio: 3  Untuk (b), Buatkan  Satuan Unit  dengan data yang di bawah:  Satuan Ukuran: Loaf(4kg) Kategori: Berat Tipe: Lebih Besar Satuan Refensi Ratio: 4", 
+            "title": "Contoh"
+        }, 
+        {
+            "location": "/master/unit_of_measure/#unit-ukuran-kategori", 
+            "text": "Field  Required  Description  Default      Nama  Yes  Nama untuk kategori ini  -", 
+            "title": "Unit Ukuran Kategori"
+        }, 
+        {
+            "location": "/inventory/persediaan/", 
+            "text": "Persediaan\n\n\nIntroduction\n\n\nDi topic ini kita ingin membahas cara untuk mengadakan persediaan di inventory kita.\n\nDi system odoo kita bisa melakukan persediaan inventory dengan cara berikut:\n\n\n\n\nBuy = Melalui beli sama vendor \n\n\nManufacture =  Melalui produksi\n\n\n\n\nKita perlu identify produk yang bersifat \nBeli\n dan \nPabrik\n. Setelah itu, kita\nbisa setting dia di \nProduct \n Persediaan \n Rute\n\n\nKarena keseringan kita harus jaga inventory kita biar tetap ada stock untuk dipakai untuk penjualan dan dipakai untuk produksi. Maka di ODOO ada buat beberapa strategy untuk membantu user untuk meringankan kerjaan seperti ini.\n\n\n\n\nMake-To-Order / MTO / Melalui Pesanan\n\n\nMinimun Stock Rule\n\n\nPermintaan Procurement\n\n\nManual Purchase Order\n\n\n\n\nMake-To-Order / MTO / Melalu Pesanan\n\n\nSesuai namanya \nOrder\n, pengadaan ini akan ditrigger waktu kita dapat dari penjualan. \n\nDi lain kata, waktu kita mengadakan penjualan/sales order, system akan check apakah stock di inventory cukup untuk order ini?\n\nBila tidak cukup, sesuai setting, system akan pilih apakah harus membuat\n\nPurchase Order (melalui beli sama vendor)\n atau membuat \nManufacturing Order (Melalui Produksi)\n.\n\n\nMake-To-Order - Buy\n\n\nMelakukan Purchase Order/Pengadaan waktu kita menerima Sales Order/Penjualan.\n\n\nSetting nya bisa di lakukan di \nProduct \n Persediaan \n Rute\n.\n\n\n\n\nSteps:\n\n\n\n\nDi \nRute\n pilihlah \nMake-To-Order\n dan \nBuy\n\n\nIsikan penyuplai di table \nVendor\n\n\n\n\nMake-To-Order - Manufacture\n\n\nMelakukan Manufacture Order/Produksi waktu kita menerima Sales Order/Penjualan.\n\n\nSetting nya bisa di lakukan di \nProduct \n Persediaan \n Rute\n.\n\n\n\n\nSteps:\n\n\n\n\nDi \nRute\n pilihlah \nMake-To-Order\n dan \nManufacture\n\n\nProduct ini perlu ada Bill of Material(BOM)\n\n\n\n\nMembuat BOM kita bisa membuat lewat tekan button di bawah ini, yang terletak di\nform produk di sisi kanan atas:\n\n\n\n\nNote:\nBill of Material adalah bahan-bahan yang di perlukan untuk merakit menjadi\nproduk\n\n\n\n\nMinimun Stock Rule\n\n\nDengan strategy ini, user perlu menentukan minimun quantity di Inventory yang mencukupi kebutuhan penjualan atau produksi.\n\n\nSetting nya bisa di lakukan di \nProduct\n.\n\n\n\n\nMembuat Rule\n\n\n\n\n\n\n\n\n\n\nField\n\n\nRequired\n\n\nDescription\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nName\n\n\nYes\n\n\nNama Rule.\n\n\nSystem Generated\n\n\n\n\n\n\nProduct\n\n\nYes\n\n\n\n\nSesuai Product yang kita klik\n\n\n\n\n\n\nGudang\n\n\nYes\n\n\n\n\n\n\n\n\n\n\nLokasi\n\n\nYes\n\n\nLokasi produk di check dan di kirim\n\n\n\n\n\n\n\n\nPeraturan\n\n\n\n\n\n\n\n\n\n\n\n\nJumlah Minimun\n\n\nYes\n\n\nSystem kan buatkan Purchase Order/Manufacturing order bila \nkuantitas inventory sama atau lebih kurang dari kuantitas ini\n\n\n0\n\n\n\n\n\n\nJumlah Maximun\n\n\nYes\n\n\nSystem akan limit kuantitas order dengan\nFormula:\n \nKuantitas Order = Jumlah Maximun - Kuantitas Inventory\n\n\n0\n\n\n\n\n\n\nKuantitas Multiple\n\n\nYes\n\n\nBiasa di gunakan untuk orderan per pallet/box\nContoh:\n Kuantitas Multiple: 10\n Jumlah Minimum: 5\n Jumlah Maximun: 15\n Kuantitas On-Hand: 4\n Kuantitas yang order adalah: 15 - 4 = 11, 11 \n 10 jadi minimun order 20\n\n\n\n\n\n\n\n\nLain-Lain\n\n\n\n\n\n\n\n\n\n\n\n\nLead Time\n\n\nYes\n\n\nHari Untuk Membeli\nHari membuat Order setelah kondisi minimun hit\n\n\nHari untuk membeli\n\n\n\n\n\n\n\n\n\n\nHari Untuk Mendapatkan Produk\nHari untuk mendapatkan produk di gudang\n\n\n\n\n\n\n\n\n\n\nBila Produk sudah ada \nMinimun Rule\n di action button akan bentuk seperti gambar di bawah ini:\n\n\n\n\nPermintaan Procurement\n\n\nIni adalah cara permintaan semi-auto. Di gunakan bila user merasa produk ini perlu di beli atau di produksi.\n\n\n\n\nMembuat Permintaan Procurement\n\n\n\n\n\n\n\n\n\n\nField\n\n\nRequired\n\n\nDescription\n\n\nDefault\n\n\n\n\n\n\n\n\n\n\nGudang\n\n\nYes\n\n\nGudang Mana yang request\n\n\n\n\n\n\n\n\nJumlah\n\n\nYes\n\n\nKuantitas yang kita request\n\n\n\n\n\n\n\n\nTanggal di rencanakan\n\n\nYes\n\n\nTanggal Pengadaan yang kita harapkan", 
+            "title": "Persediaan"
+        }, 
+        {
+            "location": "/inventory/persediaan/#persediaan", 
+            "text": "", 
+            "title": "Persediaan"
+        }, 
+        {
+            "location": "/inventory/persediaan/#introduction", 
+            "text": "Di topic ini kita ingin membahas cara untuk mengadakan persediaan di inventory kita. \nDi system odoo kita bisa melakukan persediaan inventory dengan cara berikut:   Buy = Melalui beli sama vendor   Manufacture =  Melalui produksi   Kita perlu identify produk yang bersifat  Beli  dan  Pabrik . Setelah itu, kita\nbisa setting dia di  Product   Persediaan   Rute  Karena keseringan kita harus jaga inventory kita biar tetap ada stock untuk dipakai untuk penjualan dan dipakai untuk produksi. Maka di ODOO ada buat beberapa strategy untuk membantu user untuk meringankan kerjaan seperti ini.   Make-To-Order / MTO / Melalui Pesanan  Minimun Stock Rule  Permintaan Procurement  Manual Purchase Order", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/inventory/persediaan/#make-to-order-mto-melalu-pesanan", 
+            "text": "Sesuai namanya  Order , pengadaan ini akan ditrigger waktu kita dapat dari penjualan.  \nDi lain kata, waktu kita mengadakan penjualan/sales order, system akan check apakah stock di inventory cukup untuk order ini? \nBila tidak cukup, sesuai setting, system akan pilih apakah harus membuat Purchase Order (melalui beli sama vendor)  atau membuat  Manufacturing Order (Melalui Produksi) .", 
+            "title": "Make-To-Order / MTO / Melalu Pesanan"
+        }, 
+        {
+            "location": "/inventory/persediaan/#make-to-order-buy", 
+            "text": "Melakukan Purchase Order/Pengadaan waktu kita menerima Sales Order/Penjualan.  Setting nya bisa di lakukan di  Product   Persediaan   Rute .   Steps:   Di  Rute  pilihlah  Make-To-Order  dan  Buy  Isikan penyuplai di table  Vendor", 
+            "title": "Make-To-Order - Buy"
+        }, 
+        {
+            "location": "/inventory/persediaan/#make-to-order-manufacture", 
+            "text": "Melakukan Manufacture Order/Produksi waktu kita menerima Sales Order/Penjualan.  Setting nya bisa di lakukan di  Product   Persediaan   Rute .   Steps:   Di  Rute  pilihlah  Make-To-Order  dan  Manufacture  Product ini perlu ada Bill of Material(BOM)   Membuat BOM kita bisa membuat lewat tekan button di bawah ini, yang terletak di\nform produk di sisi kanan atas:   Note:\nBill of Material adalah bahan-bahan yang di perlukan untuk merakit menjadi\nproduk", 
+            "title": "Make-To-Order - Manufacture"
+        }, 
+        {
+            "location": "/inventory/persediaan/#minimun-stock-rule", 
+            "text": "Dengan strategy ini, user perlu menentukan minimun quantity di Inventory yang mencukupi kebutuhan penjualan atau produksi.  Setting nya bisa di lakukan di  Product .", 
+            "title": "Minimun Stock Rule"
+        }, 
+        {
+            "location": "/inventory/persediaan/#membuat-rule", 
+            "text": "Field  Required  Description  Default      Name  Yes  Nama Rule.  System Generated    Product  Yes   Sesuai Product yang kita klik    Gudang  Yes      Lokasi  Yes  Lokasi produk di check dan di kirim     Peraturan       Jumlah Minimun  Yes  System kan buatkan Purchase Order/Manufacturing order bila  kuantitas inventory sama atau lebih kurang dari kuantitas ini  0    Jumlah Maximun  Yes  System akan limit kuantitas order dengan Formula:   Kuantitas Order = Jumlah Maximun - Kuantitas Inventory  0    Kuantitas Multiple  Yes  Biasa di gunakan untuk orderan per pallet/box Contoh:  Kuantitas Multiple: 10  Jumlah Minimum: 5  Jumlah Maximun: 15  Kuantitas On-Hand: 4  Kuantitas yang order adalah: 15 - 4 = 11, 11   10 jadi minimun order 20     Lain-Lain       Lead Time  Yes  Hari Untuk Membeli Hari membuat Order setelah kondisi minimun hit  Hari untuk membeli      Hari Untuk Mendapatkan Produk Hari untuk mendapatkan produk di gudang      Bila Produk sudah ada  Minimun Rule  di action button akan bentuk seperti gambar di bawah ini:", 
+            "title": "Membuat Rule"
+        }, 
+        {
+            "location": "/inventory/persediaan/#permintaan-procurement", 
+            "text": "Ini adalah cara permintaan semi-auto. Di gunakan bila user merasa produk ini perlu di beli atau di produksi.", 
+            "title": "Permintaan Procurement"
+        }, 
+        {
+            "location": "/inventory/persediaan/#membuat-permintaan-procurement", 
+            "text": "Field  Required  Description  Default      Gudang  Yes  Gudang Mana yang request     Jumlah  Yes  Kuantitas yang kita request     Tanggal di rencanakan  Yes  Tanggal Pengadaan yang kita harapkan", 
+            "title": "Membuat Permintaan Procurement"
+        }
+    ]
+}

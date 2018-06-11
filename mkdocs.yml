@@ -8,4 +8,6 @@ pages:
         - 'Unit Of Measure': 'master/unit_of_measure.md'
     - Inventory:
         - 'Persediaan': 'inventory/persediaan.md'
-        
+    - Manufacture:
+        - 'Bill of Manufacture': 'mrp/bom.md'
+        - 'Manufacturing Order': 'mrp/operation.md'
