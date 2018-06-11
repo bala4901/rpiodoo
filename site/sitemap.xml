@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-06-10</lastmod>
+     <lastmod>2018-06-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,13 @@
         
     <url>
      <loc>/master/product/</loc>
-     <lastmod>2018-06-10</lastmod>
+     <lastmod>2018-06-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/master/unit_of_measure/</loc>
-     <lastmod>2018-06-10</lastmod>
+     <lastmod>2018-06-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -29,7 +29,23 @@
         
     <url>
      <loc>/inventory/persediaan/</loc>
-     <lastmod>2018-06-10</lastmod>
+     <lastmod>2018-06-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/mrp/bom/</loc>
+     <lastmod>2018-06-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/mrp/operation/</loc>
+     <lastmod>2018-06-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
