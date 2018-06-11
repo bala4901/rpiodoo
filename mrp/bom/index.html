@@ -36,7 +36,7 @@
     
     
       
-        <title>Unit Of Measure - Odoo</title>
+        <title>Bill of Manufacture - Odoo</title>
       
     
     
@@ -70,7 +70,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#unit-of-measure" tabindex="1" class="md-skip">
+      <a href="#bill-of-manufacture-bom" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -96,7 +96,7 @@
                 Odoo
               </span>
               <span class="md-header-nav__topic">
-                Unit Of Measure
+                Bill of Manufacture
               </span>
             
           
@@ -177,12 +177,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
       Master
@@ -200,7 +198,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../product/" title="Product" class="md-nav__link">
+    <a href="../../master/product/" title="Product" class="md-nav__link">
       Product
     </a>
   </li>
@@ -210,83 +208,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Unit Of Measure
-      </label>
-    
-    <a href="./" title="Unit Of Measure" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../master/unit_of_measure/" title="Unit Of Measure" class="md-nav__link">
       Unit Of Measure
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" title="Introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#menu" title="Menu" class="md-nav__link">
-    Menu
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#satuan-unit" title="Satuan Unit" class="md-nav__link">
-    Satuan Unit
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#contoh" title="Contoh" class="md-nav__link">
-    Contoh
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#unit-ukuran-kategori" title="Unit Ukuran Kategori" class="md-nav__link">
-    Unit Ukuran Kategori
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -335,10 +261,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Manufacture
@@ -354,11 +282,63 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../mrp/bom/" title="Bill of Manufacture" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Bill of Manufacture
+      </label>
+    
+    <a href="./" title="Bill of Manufacture" class="md-nav__link md-nav__link--active">
       Bill of Manufacture
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#menu" title="Menu" class="md-nav__link">
+    Menu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#membuat-bill-of-material" title="Membuat Bill of Material" class="md-nav__link">
+    Membuat Bill of Material
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -368,7 +348,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../mrp/operation/" title="Manufacturing Order" class="md-nav__link">
+    <a href="../operation/" title="Manufacturing Order" class="md-nav__link">
       Manufacturing Order
     </a>
   </li>
@@ -414,28 +394,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#satuan-unit" title="Satuan Unit" class="md-nav__link">
-    Satuan Unit
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#contoh" title="Contoh" class="md-nav__link">
-    Contoh
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#unit-ukuran-kategori" title="Unit Ukuran Kategori" class="md-nav__link">
-    Unit Ukuran Kategori
+  <a href="#membuat-bill-of-material" title="Membuat Bill of Material" class="md-nav__link">
+    Membuat Bill of Material
   </a>
   
 </li>
@@ -457,112 +417,42 @@
               
                 
                 
-                <h1 id="unit-of-measure">Unit of Measure</h1>
+                <h1 id="bill-of-manufacture-bom">Bill of Manufacture (BOM)</h1>
 <h2 id="introduction">Introduction</h2>
-<p>Unit of Measure atau UOM atau Satuan Unit sangat penting di dalam bidang kita, karena dia akan muncul di mana-mana.
-Contohnya: Di penjualan, Pembelian, Inventory, Stock, dll.</p>
-<p>Apa yang buat di penting lagi?</p>
-<p>Coba baca kasus di bawah ini:</p>
-<p>PT. ABC membeli Salmon dari PT. GHZ dengan kuantitas besar yaitu hitungan nya
-per <code>Ton</code>. Tetapi PT. ABC dalam bidang distribusi dan menjual Salmon dalam
-quantity kecil ke consumer bisa sampai ke <code>Gram</code>. Tetapi, waktu stock opnum, PT.
-ABC memakai <code>Kg</code> sebagai satuan pembukuan.</p>
-<p>Jadi, PT. ABC perlu minimun 3 Satuan unit (Ton, Kg, Gram) untuk membantu proses bisnis mereka.</p>
-<ol>
-<li>Membuat pembelian, Memakai <code>Ton</code></li>
-<li>Membuat penjualan, memakai <code>Kg</code> atau <code>Gram</code></li>
-<li>Pembukuan inventory memakai <code>Kg</code></li>
-</ol>
-<p>Biarpun bermacam-macam Satuan unit, di bantu oleh <a href="#unit-ukuran-kategori">Unit Ukuran Kategori</a>, kita bisa meng-group satuan-satuan unit. Dan biar bagaimanapun, waktu kita membaca pembukuan inventory atau akuntin, cuma satu <a href="#satuan-unit">Satuan Unit</a> yang akan di keluarkan. System akan automasi
-perhitungan segalanya, sesuai setting-an yang ada.</p>
-<h2 id="menu">Menu</h2>
-<blockquote>
-<p>Persediaan &gt; Konfigurasi &gt; Satuan Unit</p>
-</blockquote>
-<p><img alt="Satuan Unit Menu" src="../img/uom_menu.png" /></p>
-<h2 id="satuan-unit">Satuan Unit</h2>
-<p><img alt="Satuan Unit" src="../img/uom_main.png" /></p>
+<p>Bill of Manufacture adalah list of produk untuk mengolah menjadi produk lain.
+<br>
+Contohnya: Untuk produksi</p>
+<p><strong>Produk: Smoke Salmon, 40pack</strong><br>
+Perlu bahan-bahan sebagai berikut:</p>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Required</th>
-<th>Description</th>
-<th>Default</th>
+<th>Product</th>
+<th align="right">Jumlah</th>
+<th align="left">Satuan Unit</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Satuan Ukuran</td>
-<td>Yes</td>
-<td>Nama untuk satuan ukuran ini</td>
-<td>-</td>
+<td>Salmon Fresh</td>
+<td align="right">1200</td>
+<td align="left">gram</td>
 </tr>
 <tr>
-<td>Kategori</td>
-<td>Yes</td>
-<td>Ini untuk meng-group satuan unit<br>Detail bisa liat di <a href="#unit-ukuran-kategori">SINI</a></td>
-<td>-</td>
-</tr>
-<tr>
-<td>Aktif</td>
-<td>Yes</td>
-<td>Menentukan apakah satuan unit ini masih aktif</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Ketepatan Pembulanan</td>
-<td>Yes</td>
-<td>Menentukan cara pembulatan.<br><strong>Contoh:</strong><br> Ketepatan Pembulatan: 0,001<br> Quantitas aktual: 8.97294<br> Quantitas setelah di bulatkan adalah: 8.973</td>
-<td>0,001</td>
-</tr>
-<tr>
-<td>Tipe</td>
-<td>Yes</td>
-<td><code>Satuan Dasar untuk kategori ini</code><br>Sebagai dasar dari Satuan Unit yang kategori sama.<br>Nilainya akan selalu <strong>1</strong></td>
-<td>Satuan Dasar Untuk Kategori Ini</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td><code>Lebih Besar Satuan Referensi</code><br> Nilai nya lebih besar dari pada Satuan dasar</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td><code>Lebih Kecil Satuan Referensi</code><br> Nilai nya lebih Kecil dari pada Satuan dasar</td>
-<td></td>
-</tr>
-<tr>
-<td>Ratio</td>
-<td>Yes</td>
-<td>Field ini akan muncul bila <strong>Tipe</strong> adalah <code>Lebih Besar Satuan Referensi</code> atau <code>Lebih Kecil Satuan Referensi</code></td>
-<td>1,000</td>
+<td>Kayu Bakar</td>
+<td align="right">10</td>
+<td align="left">Kg</td>
 </tr>
 </tbody>
 </table>
-<h3 id="contoh">Contoh</h3>
-<p>Case 1: Berat</p>
-<p>1 Ton = 1,000 Kg
-1 Kg = 1,000 gram
-dengan data atas contoh sebagai berikut:</p>
-<ol>
-<li>Kita buatkan <a href="#unit-ukuran-kategori">Unit Ukuran Kategori</a> untuk meng-group satuan unit yang akan di buat.<br>Kita namakan dia <strong>Berat</strong>.</li>
-<li>Buatkan <a href="#satuan-unit">Satuan Unit</a> dengan data yang di bawah:<br> Satuan Ukuran: Kg<br>Kategori: Berat<br>Tipe: Satuan Dasar untuk Kategori ini</li>
-<li>Buatkan <a href="#satuan-unit">Satuan Unit</a> dengan data yang di bawah:<br> Satuan Ukuran: Ton<br>Kategori: Berat<br>Tipe: Lebih Besar Satuan Refensi<br>Ratio: 1000</li>
-<li>Buatkan <a href="#satuan-unit">Satuan Unit</a> dengan data yang di bawah:<br> Satuan Ukuran: Gram<br>Kategori: Berat<br>Tipe: Lebih Kecil Satuan Refensi<br>Ratio: 1000</li>
-</ol>
-<p>Case 2: </p>
-<p>a) Produk <strong>US Choice Short Rib</strong> kita beli dengan satuan unit <strong>Loaf</strong>. 1 Loaf nya adalah 3 Kg. <br>
-b) Produk <strong>Beef Short Plate</strong> kita beli dengan satuan unit <strong>Loaf</strong>. 1 Loaf nya adalah 4 Kg. </p>
-<p>Dengan kasus di atas kita bisa buatkan begitu:</p>
-<ol>
-<li>Untuk (a), Buatkan <a href="#satuan-unit">Satuan Unit</a> dengan data yang di bawah:<br> Satuan Ukuran: Loaf(3kg)<br>Kategori: Berat<br>Tipe: Lebih Besar Satuan Refensi<br>Ratio: 3</li>
-<li>Untuk (b), Buatkan <a href="#satuan-unit">Satuan Unit</a> dengan data yang di bawah:<br> Satuan Ukuran: Loaf(4kg)<br>Kategori: Berat<br>Tipe: Lebih Besar Satuan Refensi<br>Ratio: 4</li>
-</ol>
-<h2 id="unit-ukuran-kategori">Unit Ukuran Kategori</h2>
-<p><img alt="Unit Ukuran Kategori" src="../img/unit_ukuran_kategori.png" /></p>
+<p>List di atas lah, kita menyebutkan nya sebagai Bill of Material.</p>
+<h2 id="menu">Menu</h2>
+<blockquote>
+<p>Pabrik &gt; Data Maste &gt; Bill of Material</p>
+</blockquote>
+<p><img alt="BOM Menu" src="../img/BOM_menu.png" /></p>
+<h2 id="membuat-bill-of-material">Membuat Bill of Material</h2>
+<p><img alt="BOM Form" src="../img/bom_form.png" /></p>
 <table>
 <thead>
 <tr>
@@ -574,10 +464,65 @@ b) Produk <strong>Beef Short Plate</strong> kita beli dengan satuan unit <strong
 </thead>
 <tbody>
 <tr>
-<td>Nama</td>
+<td>Produk</td>
 <td>Yes</td>
-<td>Nama untuk kategori ini</td>
+<td>Produk Jadi</td>
 <td>-</td>
+</tr>
+<tr>
+<td>Jumlah</td>
+<td>Yes</td>
+<td>Kuantitas di produksi</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Rujukan</td>
+<td>No</td>
+<td>Kode Resep bila ada</td>
+<td>-</td>
+</tr>
+<tr>
+<td>BoM Jenis</td>
+<td>No</td>
+<td><code>Manufacture this Product</code><br> Produk ini perlu di produksi</td>
+<td>Manufacture this product</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>Ship this product as a set of components(kit)</code><br> Produk perlu/tidak produksi dan bisa di kirim raw materialnya langsung<br> <strong>Contoh:</strong><br> Product Jadi: Detergen ABC Promo Bulan Ramadhan<br> BoM Nya: <br> 1. Detergen ABC:  1 Bks<br> 2. Piring: 1 pcs<br> Bila ada orderan Untuk "Detergen ABC promo Bulan Ramadhan", akan di kirim langsung BoM nya</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Komponen</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Required</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Produk</td>
+<td>Yes</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Kuantitas</td>
+<td>Yes</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Satuan Unit</td>
+<td>Yes</td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -601,7 +546,7 @@ b) Produk <strong>Beef Short Plate</strong> kita beli dengan satuan unit <strong
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../product/" title="Product" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../inventory/persediaan/" title="Persediaan" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -610,19 +555,19 @@ b) Produk <strong>Beef Short Plate</strong> kita beli dengan satuan unit <strong
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Product
+                Persediaan
               </span>
             </div>
           </a>
         
         
-          <a href="../../inventory/persediaan/" title="Persediaan" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../operation/" title="Manufacturing Order" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Persediaan
+                Manufacturing Order
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

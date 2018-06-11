@@ -345,6 +345,54 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Manufacture
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Manufacture
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mrp/bom/" title="Bill of Manufacture" class="md-nav__link">
+      Bill of Manufacture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mrp/operation/" title="Manufacturing Order" class="md-nav__link">
+      Manufacturing Order
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -553,7 +601,8 @@ melakukan penambahan product.</p>
 </tbody>
 </table>
 <h2 id="persediaan">Persediaan</h2>
-<p>Kegunaan <code>Persediaan</code> adalah menentukan cara penyediaan product ini</p>
+<p>Kegunaan <code>Persediaan</code> adalah menentukan cara penyediaan product ini.<br>
+Untuk teori tentang penyediaan inventory bisa ke topic <a href="../../inventory/persediaan/">Inventory/Persediaan</a></p>
 <p><img alt="Item Persediaan" src="../img/item_persediaan.png" /></p>
 <table>
 <thead>
@@ -568,19 +617,19 @@ melakukan penambahan product.</p>
 <tr>
 <td>Rute</td>
 <td>No</td>
-<td><code>Pabrik</code><br></td>
+<td><code>Pabrik</code><br>Penyediaan lewat Produksi</td>
 <td>Beli</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
-<td><code>Beli</code><br></td>
+<td><code>Beli</code><br>Penyediaan lewat beli sama vendor</td>
 <td></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
-<td><code>Membuat Pesanan</code><br></td>
+<td><code>Membuat Pesanan</code><br>Penyediaan bila dapat orderan dari sales order</td>
 <td></td>
 </tr>
 <tr>
